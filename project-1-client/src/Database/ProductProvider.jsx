@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 
 export const addProduct = async(product) =>{
-    await fetch('http://localhost:1000/add-product', {
+    await fetch('https://project-1-back-end-7lux.onrender.com/add-product', {
         method: "POST",
         headers: {
             "content-type": "application/json"
@@ -27,7 +27,7 @@ const ProductProvider = ({children}) => {
 
 
     async function getData(){
-        const responce = await fetch('http://localhost:1000/all-products', {
+        const responce = await fetch('https://project-1-back-end-7lux.onrender.com/all-products', {
             method: 'GET'
         })
         const data = await responce.json()

@@ -26,7 +26,7 @@ const userToDatabase = (name, userInfo) =>{
     const email = userInfo.email
     const fire_uid = userInfo.uid
     const user = { name, email, fire_uid }
-    fetch('http://localhost:1000/register-user', {
+    fetch('https://project-1-back-end-7lux.onrender.com/register-user', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -94,7 +94,7 @@ const AuthProvider = ({children}) => {
     // get data from database
     const getData = async(user) =>{
         const fire_uid = user.uid
-        const responce = await fetch(`http://localhost:1000/user-data/${fire_uid}`, {
+        const responce = await fetch(`https://project-1-back-end-7lux.onrender.com/user-data/${fire_uid}`, {
             method: "GET",
         })
         const data = await responce.json()
