@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { useContext } from "react";
 import { CartContext2 } from "./CartProvider2";
+import "./product.css"
 
 const Product = ({product, id}) => {
 
@@ -25,7 +26,7 @@ const Product = ({product, id}) => {
 
 
     return (
-        <div className="flex flex-col justify-between border-green-900 border-[2px] rounded-2xl p-3 gap-3">
+        <div className="product flex flex-col justify-between border-green-900 border-[2px] rounded-2xl p-3 gap-3">
             <img className="rounded-[12px]" src={photo_url} />
             <div>
                 <div className="flex flex-col md:flex-row justify-between">

@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <>
         <div className="bg-green-900">
-            <div className="flex justify-between items-center py-2 mb-10 max-w-[1320px] m-auto px-3">
+            <div className="flex justify-between items-center py-3 mb-10 max-w-[1320px] m-auto px-3">
                 <p className="text-3xl font-bold">Food App</p>
                 <Headers></Headers>
                 <div>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <div className="relative">
                         <div className= {
                             displayMenu ? "hidden" :
-                            "flex flex-col absolute right-4 top-4 bg-amber-400 border-amber-400 border-b-[1px] rounded-[5px] text-green-900 min-w-[150px] text-center font-semibold"} >
+                            "flex flex-col absolute right-4 top-4 bg-amber-400 border-amber-400 border-b-[1px] rounded-[5px] text-green-900 min-w-[150px] text-center font-semibold z-1"} >
                             <NavLink className='border-b-2 mx-3 md:hidden' to='/'>Home</NavLink>
                             <NavLink className='border-b-2 mx-3 md:hidden' to='/products'>Products</NavLink>
                             { authData && admins.includes(authData.uid) ? <NavLink className='border-b-2 mx-3 md:hidden' to='/manage-products'>Manage Products</NavLink> : null }

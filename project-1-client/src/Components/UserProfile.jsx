@@ -19,8 +19,8 @@ const UserProfile = () => {
         }
 
     return (
-        <div>
-            <p>User Profie</p>
+        <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold text-center pb-4">User Profie</p>
             { auth ? 
             <div>
                 <p>name: {user.name}</p> 
@@ -29,7 +29,7 @@ const UserProfile = () => {
             : null }
             {
             auth ?
-            <button onClick={()=>handleFunctions()}>Log Out</button>
+            <button className="bg-green-950 border-yellow-500 rounded-2xl border-[1px] p-2" onClick={()=>handleFunctions()}>Log Out</button>
             :
             <Link to='/login'><button>Login</button></Link>
             }

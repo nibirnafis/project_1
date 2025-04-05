@@ -16,14 +16,14 @@ const Login = () => {
         }
 
     return (
-        <div>
-            <p>Login</p>
+        <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold text-center pb-4">Login</p>
                 <form onSubmit={handleLogin}>
-                <input type="email" name="email" placeholder="Your Email"></input>
+                <input className="bg-green-950 border-yellow-500 rounded-2xl border-[1px]  p-2 mb-2" type="email" name="email" placeholder="Your Email"></input>
                 <br />
-                <input type="password" name="password" placeholder="Your Password"></input>
+                <input className="bg-green-950 border-yellow-500 rounded-2xl border-[1px]  p-2 mb-2" type="password" name="password" placeholder="Your Password"></input>
                 <br />
-                <button type="submit">Login</button>
+                <button className="bg-green-950 border-yellow-500 rounded-2xl border-[1px] p-2" type="submit">Login</button>
             </form>
         </div>
     );

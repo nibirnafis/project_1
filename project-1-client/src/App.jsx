@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <div className='fixed bottom-5 right-5  lg:bottom-15 lg:right-15' >
+      <div className='fixed bottom-5 right-5 z-1 lg:bottom-15 lg:right-15' >
         <Cart></Cart>
       </div>
       <div className='max-w-[1320px] m-auto'>

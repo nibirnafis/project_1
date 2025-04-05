@@ -18,16 +18,16 @@ const Register = () => {
 
 
 return (
-    <div>
-        <p>Register</p>
+    <div className="flex flex-col justify-center items-center">
+        <p className="text-4xl font-bold text-center pb-4">Register</p>
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name" placeholder="Type your Name" required></input>
+            <input className="bg-green-950 border-yellow-500 rounded-2xl border-[1px]  p-2 mb-2" type="text" name="name" placeholder="Type your Name" required></input>
             <br />
-            <input type="email" name="email" placeholder="Type your Email" required></input>
+            <input className="bg-green-950 border-yellow-500 rounded-2xl border-[1px]  p-2 mb-2" type="email" name="email" placeholder="Type your Email" required></input>
             <br />
-            <input type="password" name="password" placeholder="Type your Password" required></input>
+            <input className="bg-green-950 border-yellow-500 rounded-2xl border-[1px]  p-2 mb-2" type="password" name="password" placeholder="Type your Password" required></input>
             <br />
-            <button type="submit">Register</button>
+            <button className="bg-green-950 border-yellow-500 rounded-2xl border-[1px] p-2" type="submit">Register</button>
         </form>
     </div>
     );
