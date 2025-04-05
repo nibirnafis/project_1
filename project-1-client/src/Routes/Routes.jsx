@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/product-detail/:id',
                 element: <ProductDetail></ProductDetail>,
-                loader: ({params}) => fetch(`http://localhost:1000/product-detail/${params.id}`)
+                loader: ({params}) => fetch(`https://project-1-back-end-7lux.onrender.com/product-detail/${params.id}`)
             },
             {
                 path: '/profile',
