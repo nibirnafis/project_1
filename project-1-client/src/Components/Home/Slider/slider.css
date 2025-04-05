@@ -1,21 +1,23 @@
 .transition:hover{
-    transform: translateY(-10px) scale(104%);
+    transform: translateY(-20px);
     border-color: rgb(233, 194, 20);
     border: 2px;
     border-style: solid;
 }
 
+
 .clip-mask{
     overflow: hidden;
 }
 
-@keyframes slide{
+/* @keyframes slide{
     0% {transform: translateX(0%)}
     50% {transform: translateX(5%)}
     100% {transform: translateX(0%)}
-}
+} */
 
 .slider{
     animation: slide 10s linear infinite ;
 }
+  
 

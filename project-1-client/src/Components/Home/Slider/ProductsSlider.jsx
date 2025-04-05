@@ -10,8 +10,8 @@ const ProductsSlider = () => {
     return (
         <>
         <div className="clip-mask py-[20px] mb-10">
-            <p className="text-center font-bold text-3xl mb-8">Our Products</p>
-            <div className="slider flex flex-col md:flex-row gap-3">
+            <p className="text-center font-bold text-5xl mb-8">Our Products</p>
+            <div className="slider grid grid-cols-2 md:grid-cols-3 gap-3">
                 {
                     products.map(product => <SlideProduct key={product._id} product={product}></SlideProduct>)
                 }
@@ -22,3 +22,5 @@ const ProductsSlider = () => {
 };
 
 export default ProductsSlider;
+
+// flex flex-col md:flex-row gap-3
