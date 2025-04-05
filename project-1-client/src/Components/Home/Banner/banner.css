@@ -1,0 +1,8 @@
+.banner-btn{
+    transform: scale(100%);
+    transition: .2s;
+}
+
+.banner-btn:hover{
+    transform: scale(105%);
+}
