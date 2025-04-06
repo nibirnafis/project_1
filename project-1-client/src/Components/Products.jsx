@@ -8,7 +8,7 @@ const Products = () => {
 
     return (
         <>
-        <div className="mx-3">
+        <div>
             <p className="text-4xl font-bold text-center pb-4">All Products</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-10">
                 {

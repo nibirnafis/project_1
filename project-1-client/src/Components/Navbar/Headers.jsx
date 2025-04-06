@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import { useContext } from "react";
 
@@ -12,9 +12,9 @@ const Headers = () => {
 
     return (
         <div className="hidden md:flex gap-3 ">
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/products'>Products</NavLink>
-            { authData && admins.includes(authData.uid) ? <NavLink to='/manage-products'>Manage Products</NavLink> : null }
+            <Link to='/'>Home</Link>
+            <Link to='/products'>Products</Link>
+            { authData && admins.includes(authData.uid) ? <Link to='/manage-products'>Manage Products</Link> : null }
         </div>
     );
 };
