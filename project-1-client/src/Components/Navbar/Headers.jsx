@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import { useContext } from "react";
+import "./headers.css"
 
 
 
@@ -11,10 +12,10 @@ const Headers = () => {
 
 
     return (
-        <div className="hidden md:flex gap-3 ">
-            <Link to='/'>Home</Link>
-            <Link to='/products'>Products</Link>
-            { authData && admins.includes(authData.uid) ? <Link to='/manage-products'>Manage Products</Link> : null }
+        <div className="hidden md:flex gap-3">
+            <Link className='act' to='/'>Home</Link>
+            <Link className='act' to='/products'>Products</Link>
+            { authData && admins.includes(authData.uid) ? <Link className='act' to='/manage-products'>Manage Products</Link> : null }
         </div>
     );
 };
