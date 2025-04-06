@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <div className='sticky top-0 z-1 w-full'>
+        <Navbar></Navbar>
+      </div>
       <div className='fixed bottom-5 right-5 z-1 lg:bottom-15 lg:right-15' >
         <Cart></Cart>
       </div>
