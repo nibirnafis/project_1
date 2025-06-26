@@ -12,9 +12,7 @@ A full-stack food ordering application for a **single restaurant/shop**.
 
 ### Frontend:
 - **React** (with Vite)
-- **React Router**
 - **Tailwind CSS**
-- **React Context API** and **useReducer** for state management
 
 ### Backend:
 - **Node.js**
@@ -29,6 +27,7 @@ A full-stack food ordering application for a **single restaurant/shop**.
 
 ## 🔐 Features
 
+- React Router (for Routes)
 - User Authentication (Sign In, Log In, Log Out) via Firebase
 - Dynamic menu display with real-time updates from MongoDB
 - Admin panel to add new food items
