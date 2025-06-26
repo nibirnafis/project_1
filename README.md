@@ -33,7 +33,7 @@ A full-stack food ordering application for a **single restaurant/shop**.
 - Dynamic menu display with real-time updates from MongoDB
 - Admin panel to add new food items
 - Image uploads via Cloudinary
-- State management using `useContext` and `useReducer`
+- State management(Cart) using `useContext` and `useReducer`
 
 ## 📌 Notes
 
